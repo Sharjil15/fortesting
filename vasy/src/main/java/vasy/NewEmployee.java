@@ -24,7 +24,7 @@ public class NewEmployee {
 
 
 
-		driver.get("https://croods.vasyerp.com/login?logout");
+		driver.get("https://aws.vasyerp.com/dashboard");
 		driver.manage().window().maximize();
 		WebElement userName=driver.findElement(By.xpath("//input[@name='userName']"));
 		userName.sendKeys("vyaparerp");
@@ -42,7 +42,7 @@ public class NewEmployee {
 		WebElement Employee=driver.findElement(By.partialLinkText("Employee"));
 		Employee.click();
 
-		WebElement createNewEmployee=driver.findElement(By.xpath("//a[@id='newEmployee']"));
+		WebElement createNewEmployee=driver.findElement(By.id("newEmployee"));
 		createNewEmployee.click();
 
 
@@ -91,6 +91,7 @@ public class NewEmployee {
 				break;
 			}
 		}
+		
 		WebElement pincode=driver.findElement(By.name("pincode"));
 		pincode.sendKeys("548752");
 

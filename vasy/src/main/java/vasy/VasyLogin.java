@@ -19,7 +19,7 @@ public class VasyLogin {
 		//WebDriver driver=new FirefoxDriver();
 		
 		
-		driver.get("https://croodstest.vasyerp.com/dashboard");
+		driver.get("https://aws.vasyerp.com/dashboard");
 		driver.manage().window().maximize();
 		WebElement userName=driver.findElement(By.xpath("//input[@name='userName']"));
 		userName.sendKeys("croods");

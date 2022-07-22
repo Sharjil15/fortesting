@@ -21,7 +21,7 @@ public class NewVendors {
 	
 
 
-		driver.get("https://croods.vasyerp.com/login?logout");
+		driver.get("https://aws.vasyerp.com/dashboard");
 		driver.manage().window().maximize();
 		WebElement userName=driver.findElement(By.xpath("//input[@name='userName']"));
 		userName.sendKeys("vyaparerp");

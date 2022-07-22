@@ -19,7 +19,7 @@ public class Newcustomer {
 		//System.setProperty("webdriver.gecko.driver","C:\\Users\\Sharjil\\eclipse-workspace\\drivers\\geckodriver-v0.22.0-win64\\geckodriver.exe");
 		//WebDriver driver=new FirefoxDriver();
 
-		driver.get("https://croods.vasyerp.com/login?logout");
+		driver.get("https://aws.vasyerp.com/dashboard");
 		driver.manage().window().maximize();
 		WebElement userName=driver.findElement(By.xpath("//input[@name='userName']"));
 		userName.sendKeys("vyaparerp");
